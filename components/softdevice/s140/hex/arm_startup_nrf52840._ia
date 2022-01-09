@@ -1,0 +1,6 @@
+--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"
+-I.\RTE\_s140_nrf52_7.2.0_softdevice
+-IC:\Users\vip2884\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+-IC:\Users\vip2884\AppData\Local\Arm\Packs\NordicSemiconductor\nRF_DeviceFamilyPack\8.40.3\Device\Include
+--pd "__UVISION_VERSION SETA 528" --pd "_RTE_ SETA 1" --pd "NRF52840_XXAA SETA 1"
+--list .\listings\arm_startup_nrf52840.lst --xref -o ..\..\components\softdevice\s140\hex\arm_startup_nrf52840.o --depend ..\..\components\softdevice\s140\hex\arm_startup_nrf52840.d "RTE\Device\nRF52840_xxAA\arm_startup_nrf52840.s"
